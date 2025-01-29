@@ -1,0 +1,10 @@
+var nickname = prompt("Enter your nickname:");
+var In = parseFloat(prompt("Enter your height in inches:"));
+var KG = parseFloat(prompt("Enter your weight in kilograms:"));
+
+var FT = Math.floor(In / 12);
+var Rem = In % 12;
+
+var weightInPounds = KG * 2.20462;
+
+alert("Name: " + nickname + "\nHeight: " + FT + "'" + Rem + "\"\nWeight: " + weightInPounds.toFixed(3) + " lbs");
